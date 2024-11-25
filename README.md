@@ -48,7 +48,7 @@ Transfer learning allows us to leverage a model pre-trained on a large dataset (
 
 - [Colleting dataset](https://github.com/dusty-nv/jetson-inference/blob/master/docs/pytorch-collect-detection.md#collecting-your-own-detection-datasets) by using [camera-capture](https://github.com/dusty-nv/jetson-inference/blob/master/docs/pytorch-collect-detection.md#launching-the-tool) tool
 
-![alt text](image.png)
+![alt text](https://github.com/giangdo11/shape-detection-with-jetson/blob/main/images/image.png)
 
 ### 3. [Re-training SSD-Mobilenet](https://github.com/dusty-nv/jetson-inference/blob/master/docs/pytorch-ssd.md#re-training-ssd-mobilenet)
 - Using train_ssd.py to [Re-training SSD-Mobilenet](https://github.com/dusty-nv/jetson-inference/blob/master/docs/pytorch-ssd.md#training-the-ssd-mobilenet-model)
@@ -76,4 +76,4 @@ $ python3 shape-detection.py
 
 After running inference, the model should be able to accurately detect and classify shapes within the images. Performance may vary based on shape complexity, image quality, and lighting conditions.
 
-![alt text](image-1.png)
+![alt text](https://github.com/giangdo11/shape-detection-with-jetson/blob/main/images/image-1.png)
