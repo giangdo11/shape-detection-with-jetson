@@ -68,9 +68,13 @@ After converting the model, we will have `ssd-mobilenet.onnx` and `labels.txt` u
 Use the model that is trained in the above step to detect shapes with jetson_inference. In this project, I've already trained the model and put it in /shape-detection-with-jetson/models.zip
 
 ``` bash
-$ cd /shape-detection
+$ cd ~/shape-detection-with-jetson
 $ unzip models.zip
-$ python3 shape-detection.py
+$ cd ~/jetson-inference
+$ docker/run.sh --volume ~/shape-detection-with-jetson:/shape-detection
+$ cd /shape-detection
+$ python3 shape-detection.py <path-to-your-model> <input> <output>
+$ python3 shape-detection.py /shape-detection/models /dev/video0
 ```
 
 ## Results
